@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="nav">
+    <div>
+      <div class="nav-item">
+        <h1 class="nav-title">Notes</h1>
+      </div>
+      <div class="nav-item search">
+        <input class="search" type="search" placeholder="Search">
+      </div>
+    </div>
+    <div class="nav-item">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon aria-label="Side nav toggle icon">account_box</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

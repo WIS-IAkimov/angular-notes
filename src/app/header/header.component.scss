@@ -1,0 +1,36 @@
+@import "~@angular/material/theming";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & div {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-right: 1em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.search {
+  input[type=search] {
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 2.0;
+    min-width: 10vw;
+    padding-left: 16px;
+    transition: min-width .3s;
+
+    &:focus {
+      min-width: 15vw;
+      outline: none;
+    }
+  }
+}
